@@ -1,0 +1,11 @@
+<form #form class="add-todo-form" (submit)="$event.preventDefault(); onSubmit(form, titleInput)">
+  <input
+    #titleInput
+    type="text"
+    name="title"
+    placeholder="What needs to be done?"
+    autocomplete="off"
+    required
+  />
+  <button type="submit">Add</button>
+</form>
